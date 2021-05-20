@@ -25,8 +25,18 @@ function App() {
         Hello {fName} {lName} {exlamation}
       </h1>
       <form onSubmit={handleChange}>
-        <input onInput={inputFName} name="fName" placeholder="First Name" />
-        <input onInput={inputLName} name="lName" placeholder="Last Name" />
+        <input
+          onChange={inputFName}
+          name="fName"
+          placeholder="First Name"
+          value={fName}
+        />
+        <input
+          onChange={inputLName}
+          name="lName"
+          placeholder="Last Name"
+          value={lName}
+        />
         <button type="submit">Submit</button>
       </form>
     </div>
