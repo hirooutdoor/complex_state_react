@@ -6,11 +6,13 @@ function App() {
   const [exlamation, setExclamation] = useState("");
 
   function inputFName(event) {
-    setFName(event.target.value);
+    const firstName = event.target.value;
+    setFName(firstName);
   }
 
   function inputLName(event) {
-    setLName(event.target.value);
+    const lastName = event.target.value;
+    setLName(lastName);
   }
 
   function handleChange(event) {
